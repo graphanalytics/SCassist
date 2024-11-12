@@ -1,0 +1,46 @@
+Package: SCassist
+Type: Package
+Title: SCassist – An AI Based Workflow Assistant for Single Cell Analysis
+Version: 0.1.0
+Author: Vijay Nagarajan [aut, cre]
+Maintainer: Vijay Nagarajan <nagarajanv@nih.gov>
+Description: SCassist is a comprehensive toolkit designed to empower single-cell RNA sequencing (scRNA-seq) researchers with intelligent insights and recommendations. The package leverages the power of large language models (LLMs) to streamline the analysis workflow and guide decision-making, ultimately leading to more efficient and interpretable results.
+    **SCassist offers a collection of functions that cover various aspects of single-cell analysis, including: 
+        - **Quality Control and Filtering:** Analyze quality metrics using an LLM to recommend optimal filtering thresholds, ensuring only high-quality cells are included in downstream analysis.
+        - **Normalization:** Recommend the most appropriate normalization method for your data based on its characteristics and ensure data is normalized for downstream analysis.
+        - **Variable Feature Analysis:**  Identify enriched biological pathways and ontologies among variable genes, providing insights into the processes driving cell-to-cell variation.
+        - **Principal Component Analysis (PCA):**  Analyze the top principal components (PCs) using an LLM to interpret the biological processes driving the variations captured by each PC.
+        - **Dimensionality Reduction:**  Recommend the optimal number of PCs to use for downstream analysis (e.g., neighbor finding, UMAP) based on the variance explained.
+        - **Clustering:**  Recommend a suitable range of resolution values for Seurat's `FindClusters` function, facilitating the identification of distinct cell populations.
+        - **Marker Gene Analysis and Cell Type Prediction:**  Analyze top marker genes for each cluster using an LLM to predict potential cell types and provide reasoned explanations for the predictions.
+        - **KEGG Pathway Enrichment Analysis:**  Analyze KEGG pathway enrichment results using an LLM to provide deeper insights into the enriched pathways, their relationships, and potential key genes or targets.
+    **SCassist streamlines and accelerates your single-cell analysis workflow by providing:** 
+        - **Automated Recommendations:**  Receive tailored recommendations for key parameters and analysis choices based on your specific data characteristics.
+        - **LLM-Powered Insights:**  Leverage the power of LLMs to interpret complex data, uncover hidden patterns, and generate insightful summaries and explanations.
+        - **Intuitive Interface:**  Easy-to-use functions with clear documentation and examples, making advanced analysis accessible to researchers of all levels.
+    **SCassist is a valuable tool for single-cell researchers who want to:** 
+        - **Enhance data quality:**  Ensure robust analysis by identifying and removing poor quality cells.
+        - **Gain deeper insights:**  Uncover the biological processes and cell types driving the variations in your scRNA-seq data.
+        - **Streamline decision-making:**  Make informed choices about analysis parameters and reduce manual experimentation.
+        - **Improve research efficiency:**  Focus on scientific discovery by automating routine tasks and leveraging AI assistance.
+License: file LICENSE
+Encoding: UTF-8
+LazyData: true
+Imports:
+    igraph,
+    Seurat,
+    rollama,
+    BiocManager,
+    clusterProfiler,
+    org.Hs.eg.db,
+    dplyr,
+    plyr,
+    tidyr,
+    data.table,
+    httr,
+    jsonlite,
+    Matrix,
+    visNetwork
+Suggests: 
+    testthat (>= 3.0.0)
+RoxygenNote: 7.3.2
