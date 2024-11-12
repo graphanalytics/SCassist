@@ -1,6 +1,6 @@
 # SCassist: An AI-Powered Workflow Assistant for Single-Cell Analysis
 
-**SCassist** is a comprehensive toolkit designed to empower single-cell RNA sequencing (scRNA-seq) researchers with intelligent insights and recommendations. The package leverages the power of large language models (LLMs) to streamline the analysis workflow and guide decision-making, ultimately leading to more efficient and interpretable results.
+**SCassist** SCassist utilizes a combination of statistical calculations and LLM-based insights to guide users through the complex process of single-cell RNA-seq data analysis. The package aims to provide recommendations, annotations, and interpretations, leading to efficient and insightful results.
 
 **Features:**
 
@@ -26,7 +26,7 @@
 install.packages("devtools")
 
 # Install SCassist from GitHub
-devtools::install_github("your-github-username/SCassist") 
+devtools::install_github("your-github-username/SCassist")
 ```
 
 **Example Usage:**
@@ -57,4 +57,4 @@ We welcome contributions to improve SCassist! Please submit issues or pull reque
 
 **License:**
 
-The license for this package can be found in the `LICENSE` file within the package directory. 
+The license for this package can be found in the `LICENSE` file within the package directory.
