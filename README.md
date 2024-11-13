@@ -1,4 +1,8 @@
 # SCassist: An AI-Powered Workflow Assistant for Single-Cell Analysis
+------------
+- Authors: Vijay Nagarajan PhD, Amy Zhang PhD
+- Affiliation: Laboratory of Immunology, NEI/NIH
+- Contact: nagarajanv@nih.gov
 
 **SCassist** utilizes a combination of statistical calculations and LLM-based insights to guide users through the complex process of single-cell RNA-seq data analysis. The package aims to provide recommendations, annotations, and interpretations, leading to efficient and insightful results.
 
@@ -30,7 +34,26 @@ install.packages("devtools")
 # Install SCassist from GitHub
 devtools::install_github("NIH-NEI/SCassist")
 ```
+**LLM Server Setup:**
+```
+# SCassist Local Ollama Server Setup
 
+# Install Ollama following instructions below;
+https://github.com/ollama/ollama
+
+# Start ollama desktop application or from command line (ollama serve)
+
+# Start R/Rstudio
+
+# Install rollama package to use the local ollama llm server
+install.packages("rollama")
+
+# Download the model (in R)
+pull_model("llama3.1")
+
+# SCassist Remote Google Server Setup - obtain api-key following below;
+https://ai.google.dev/gemini-api/docs/api-key
+```
 **Example Usage:**
 
 **Download example data:** [NK, CD4+ and CD8+ T cells from LCMV infected Ifng - CTCF binding site mutant mice - GSM6625298_scRNA_LCMV_Day4_CD4_CD8_NK_WT_filtered_feature_bc_matrix.h5](https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSM6625299&format=file&file=GSM6625299%5FscRNA%5FLCMV%5FDay4%5FCD4%5FCD8%5FNK%5FKO%5Ffiltered%5Ffeature%5Fbc%5Fmatrix%2Eh5)
