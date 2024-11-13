@@ -5,7 +5,7 @@
 ------------
 **SCassist** is an R package that utilizes a combination of statistical calculations and LLM-based insights to guide users through the complex process of single-cell RNA-seq data analysis. The package aims to provide recommendations, annotations, and interpretations, leading to efficient and insightful results.
 
-**Features:**
+### **Features:**
 
 * Recommendations for quality control and filtering
 * Recommendations for the most appropriate Normalization method
@@ -16,7 +16,7 @@
 * Marker gene analysis and cell type prediction with detailed reasoning
 * KEGG pathway and GO enrichment analysis and integration, providing deeper insights in to system understanding
 
-**Benefits:**
+### **Benefits:**
 
 * **Automated Recommendations:** Receive tailored recommendations for key parameters and analysis choices based on your specific data characteristics.
 * **LLM-Powered Insights:** Leverage the power of LLMs to interpret complex data, uncover hidden patterns, and generate insightful summaries and explanations.
@@ -24,7 +24,7 @@
 * **Confidential:** Option to use a local LLM server to keep your data and analysis confidential.
 * **Cost effective:** If taking advantage of google models, use pay-as-you-go low cost API call options.
 
-**Installation:**
+### **Installation:**
 
 ```R
 # Install the devtools package if you don't have it
@@ -49,7 +49,7 @@ pull_model("llama3.1")
 * SCassist Remote Google Server Setup - obtain api-key following the instructions here:
 https://ai.google.dev/gemini-api/docs/api-key
 
-**Example Usage:**
+### **Example Usage:**
 
 **Download example data:** [NK, CD4+ and CD8+ T cells from LCMV infected Ifng - CTCF binding site mutant mice - GSM6625298_scRNA_LCMV_Day4_CD4_CD8_NK_WT_filtered_feature_bc_matrix.h5](https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSM6625299&format=file&file=GSM6625299%5FscRNA%5FLCMV%5FDay4%5FCD4%5FCD8%5FNK%5FKO%5Ffiltered%5Ffeature%5Fbc%5Fmatrix%2Eh5)
 
@@ -77,25 +77,26 @@ qc_recommendations <- SCassist_analyze_quality("KO", llm_server="ollama")
 # ...and many more functions!
 ```
 
-**Documentation:**
+### **Tutorials:**
 
-Detailed documentation for each function, including parameters, usage, and expected outputs, is available through the `?` help function in R. For example, run ?SCassist to known about all the included functions, run ?SCassist_analyze_quality to learn about the syntax, parameters, expected inputs, defaults and outputs about the function that analyzes the quality of your single cell data and recommends filtering options.
-
-**Tutorials:**
-
-Step-by-step tutorials, documenting the full workflow for the example datasets are provided below:
+Step-by-step tutorials documenting the full workflow for the example datasets are provided below:
 * [Single Cell RNA-Seq Analysis of PBMC's from a healthy human Vs an Uveitis patient, using SCassist - an AI-Based Workflow Assistant](https://github.com/NIH-NEI/SCassist/blob/main/docs/SCassist-Tutorial-BCRUV.html)
+
 * [Single Cell RNA-Seq Analysis of NK, CD4+ and CD8+ T cells isolated from LCMV infected WT and Ifng - CTCF binding site mutant mice, using SCassist - an AI-Based Workflow Assistant](https://github.com/NIH-NEI/SCassist/blob/main/docs/SCassist-Tutorial-LCMV.html)
 
-**Old Seurat Workflow, for comparison:**
+**Old Seurat Workflows, for comparison:**
 
 The below workflows are the original, standard workflow versions. We used these old versions to evaluate our new SCassist based workflow.
 * [Single Cell RNA-Seq Analysis of PBMC's from a healthy human Vs an Uveitis patient - Old workflow](https://pulaknath.github.io/bcr-uveitis/)
 
 * [Single Cell RNA-Seq Analysis of NK, CD4+ and CD8+ T cells isolated from LCMV infected WT and Ifng - CTCF binding site mutant mice - Old workflow](https://github.com/NIH-NEI/SCassist/blob/main/docs/LCMV-standard.html)
 
-**Supporting Scripts**
+### **Documentation:**
 
-**License:**
+Detailed documentation for each function, including parameters, usage, and expected outputs, is available through the `?` help function in R. For example, run ?SCassist to known about all the included functions, run ?SCassist_analyze_quality to learn about the syntax, parameters, expected inputs, defaults and outputs about the function that analyzes the quality of your single cell data and recommends filtering options.
+
+### **Supporting Scripts:**
+
+### **License:**
 
 The license for this package can be found in the `LICENSE` file within the package directory.
