@@ -38,6 +38,10 @@ devtools::install_github("NIH-NEI/SCassist")
 library(SCassist)
 library(Seurat)
 
+# Download example data
+[NK, CD4+ and CD8+ T cells from LCMV infected Ifng - CTCF binding site mutant mice](https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSM6625299&format=file&file=GSM6625299%5FscRNA%5FLCMV%5FDay4%5FCD4%5FCD8%5FNK%5FKO%5Ffiltered%5Ffeature%5Fbc%5Fmatrix%2Eh5)
+
+
 # Load the example PBMC dataset
 data("pbmc")
 
