@@ -1,9 +1,8 @@
 # SCassist: An AI-Powered Workflow Assistant for Single-Cell Analysis
-------------
 - Authors: Vijay Nagarajan PhD
 - Affiliation: Laboratory of Immunology, NEI/NIH
 - Contact: nagarajanv@nih.gov
-
+------------
 **SCassist** is an R package that utilizes a combination of statistical calculations and LLM-based insights to guide users through the complex process of single-cell RNA-seq data analysis. The package aims to provide recommendations, annotations, and interpretations, leading to efficient and insightful results.
 
 **Features:**
@@ -80,7 +79,7 @@ qc_recommendations <- SCassist_analyze_quality("KO", llm_server="ollama")
 
 **Documentation:**
 
-Detailed documentation for each function, including parameters, usage, and expected outputs, is available through the `?` help function in R. For example, run ?SCassist to known about all the included functions, run ?SCassist_analyze_quality to learn about the syntax, parameters, expected inputs, defaults and outputs about the function that analyzes the quality of your single cell data and recommends filtering options. 
+Detailed documentation for each function, including parameters, usage, and expected outputs, is available through the `?` help function in R. For example, run ?SCassist to known about all the included functions, run ?SCassist_analyze_quality to learn about the syntax, parameters, expected inputs, defaults and outputs about the function that analyzes the quality of your single cell data and recommends filtering options.
 
 **Tutorials:**
 
