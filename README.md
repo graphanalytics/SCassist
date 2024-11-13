@@ -33,23 +33,28 @@ devtools::install_github("NIH-NEI/SCassist")
 
 **Example Usage:**
 
+**Download example data:** [NK, CD4+ and CD8+ T cells from LCMV infected Ifng - CTCF binding site mutant mice - GSM6625298_scRNA_LCMV_Day4_CD4_CD8_NK_WT_filtered_feature_bc_matrix.h5](https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSM6625299&format=file&file=GSM6625299%5FscRNA%5FLCMV%5FDay4%5FCD4%5FCD8%5FNK%5FKO%5Ffiltered%5Ffeature%5Fbc%5Fmatrix%2Eh5)
+
+
 ```R
 # Load the SCassist and Seurat packages
 library(SCassist)
 library(Seurat)
 
-# Download example data
-[NK, CD4+ and CD8+ T cells from LCMV infected Ifng - CTCF binding site mutant mice](https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSM6625299&format=file&file=GSM6625299%5FscRNA%5FLCMV%5FDay4%5FCD4%5FCD8%5FNK%5FKO%5Ffiltered%5Ffeature%5Fbc%5Fmatrix%2Eh5)
+# Load the downloaded example file
+KO <- Read10X_h5("GSM6625298_scRNA_LCMV_Day4_CD4_CD8_NK_WT_filtered_feature_bc_matrix.h5", use.names = T)
 
+# Create seurat object
+KO <- CreateSeuratObject(counts = KO[["Gene Expression"]], names.field = 2,names.delim = "\\-")
 
-# Load the example PBMC dataset
-data("pbmc")
+# Set api_key_file variable
+api_key_file = "api_key_from_google.txt"
 
-# Recommend normalization method
-SCassist_recommend_normalization("pbmc")
+# Recommend quality control filters using Gemini (online)
+qc_recommendations <- SCassist_analyze_quality("KO", llm_server="google", api_key_file = api_key_file)
 
-# Analyze top variable features
-SCassist_analyze_variable_features("pbmc", top_n_variable_features = 20)
+# Recommend quality control filters using Llama3 (local)
+qc_recommendations <- SCassist_analyze_quality("KO", llm_server="ollama")
 
 # ...and many more functions!
 ```
