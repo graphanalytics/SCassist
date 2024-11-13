@@ -98,7 +98,6 @@ Detailed documentation for each function, including parameters, usage, and expec
 ### **Supporting Files/Scripts:**
 - [SCassist Template Prompts](docs/SCassist-prompts.md)
 - [SCassist Semantic Similarity Evaluation Script](docs/bert-similarity.md)
-- [SCassist Human Expert Evaluation Template Sheet]
 
 ### **License:**
 
