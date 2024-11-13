@@ -38,7 +38,7 @@ devtools::install_github("NIH-NEI/SCassist")
 * SCassist Local Ollama Server Setup
 * Install Ollama following instructions here:
 https://github.com/ollama/ollama
-*Start ollama desktop application or from command line (ollama serve)
+* Start ollama desktop application or from command line (ollama serve)
 
 ```
 # Install rollama package to use the local ollama llm server
@@ -80,7 +80,7 @@ qc_recommendations <- SCassist_analyze_quality("KO", llm_server="ollama")
 
 **Documentation:**
 
-Detailed documentation for each function, including parameters, usage, and expected outputs, is available through the `?` help function in R.
+Detailed documentation for each function, including parameters, usage, and expected outputs, is available through the `?` help function in R. For example, run ?SCassist to known about all the included functions, run ?SCassist_analyze_quality to learn about the syntax, parameters, expected inputs, defaults and outputs about the function that analyzes the quality of your single cell data and recommends filtering options. 
 
 **Tutorials:**
 
