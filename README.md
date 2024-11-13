@@ -84,15 +84,15 @@ Detailed documentation for each function, including parameters, usage, and expec
 **Tutorials:**
 
 Step-by-step tutorials, documenting the full workflow for the example datasets are provided below:
-* Single Cell RNA-Seq Analysis of PBMC's from a healthy human Vs an Uveitis patient, using SCassist - an AI-Based Workflow Assistant
-* Single Cell RNA-Seq Analysis of NK, CD4+ and CD8+ T cells isolated from LCMV infected WT and Ifng - CTCF binding site mutant mice, using SCassist - an AI-Based Workflow Assistant
+* [Single Cell RNA-Seq Analysis of PBMC's from a healthy human Vs an Uveitis patient, using SCassist - an AI-Based Workflow Assistant](https://github.com/NIH-NEI/SCassist/blob/main/docs/SCassist-Tutorial-BCRUV.html)
+* [Single Cell RNA-Seq Analysis of NK, CD4+ and CD8+ T cells isolated from LCMV infected WT and Ifng - CTCF binding site mutant mice, using SCassist - an AI-Based Workflow Assistant](https://github.com/NIH-NEI/SCassist/blob/main/docs/SCassist-Tutorial-LCMV.html)
 
 **Old Seurat Workflow, for comparison:**
 
 The below workflows are the original, standard workflow versions. We used these old versions to evaluate our new SCassist based workflow.
 * [Single Cell RNA-Seq Analysis of PBMC's from a healthy human Vs an Uveitis patient - Old workflow](https://pulaknath.github.io/bcr-uveitis/)
 
-* [Single Cell RNA-Seq Analysis of NK, CD4+ and CD8+ T cells isolated from LCMV infected WT and Ifng - CTCF binding site mutant mice - Old workflow](docs/LCMV-standard.html)
+* [Single Cell RNA-Seq Analysis of NK, CD4+ and CD8+ T cells isolated from LCMV infected WT and Ifng - CTCF binding site mutant mice - Old workflow](https://github.com/NIH-NEI/SCassist/blob/main/docs/LCMV-standard.html)
 
 **Supporting Scripts**
 
