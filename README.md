@@ -96,8 +96,8 @@ The below workflows are the original, standard workflow versions. We used these 
 Detailed documentation for each function, including parameters, usage, and expected outputs, is available through the `?` help function in R. For example, run ?SCassist to known about all the included functions, run ?SCassist_analyze_quality to learn about the syntax, parameters, expected inputs, defaults and outputs about the function that analyzes the quality of your single cell data and recommends filtering options.
 
 ### **Supporting Files/Scripts:**
-- [SCassist Template Prompts](docs/SCassist-prompts.md)
-- [SCassist Semantic Similarity Evaluation Script](docs/bert-similarity.md)
+- [SCassist Template Prompts](https://nih-nei.github.io/SCassist/SCassist-prompts.md)
+- [SCassist Semantic Similarity Evaluation Script](https://nih-nei.github.io/SCassist/bert-similarity.md)
 
 ### **License:**
 
