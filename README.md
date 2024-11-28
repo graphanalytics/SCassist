@@ -49,7 +49,7 @@ https://github.com/ollama/ollama
 install.packages("rollama")
 
 # Download the model (in R)
-pull_model("llama3.1")
+pull_model("llama3")
 ```
 * SCassist Remote Google Server Setup - obtain api-key following the instructions here:
 https://ai.google.dev/gemini-api/docs/api-key
@@ -81,6 +81,12 @@ qc_recommendations <- SCassist_analyze_quality("KO", llm_server="ollama")
 
 # ...and many more functions!
 ```
+
+### **Tutorial Datasets:**
+* [PBMCs from Birdshot Uveitis Patient](https://github.com/PulakNath/bcr-uveitis/raw/refs/heads/main/Results/cellranger/NS7R65BBTS/cellranger_output/filtered_feature_bc_matrix.h5)
+* [PBMCs from Healthy Human Control](https://github.com/PulakNath/bcr-uveitis/raw/refs/heads/main/Results/cellranger/NS3R189BTS/cellranger_output/filtered_feature_bc_matrix.h5)
+* [NK, CD4+ and CD8+ T cells from LCMV infected WT mice](https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSM6625298&format=file&file=GSM6625298%5FscRNA%5FLCMV%5FDay4%5FCD4%5FCD8%5FNK%5FWT%5Ffiltered%5Ffeature%5Fbc%5Fmatrix%2Eh5)
+* [NK, CD4+ and CD8+ T cells from LCMV infected Ifng - CTCF binding site mutant mice](https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSM6625299&format=file&file=GSM6625299%5FscRNA%5FLCMV%5FDay4%5FCD4%5FCD8%5FNK%5FKO%5Ffiltered%5Ffeature%5Fbc%5Fmatrix%2Eh5)
 
 ### **Tutorials:**
 
