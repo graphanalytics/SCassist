@@ -27,6 +27,11 @@
 ### **Installation:**
 
 ```R
+# Install the necessary packages
+install.packages("visNetwork")
+install.packages("httr")
+BiocManager::install("clusterProfiler")
+
 # Install the devtools package if you don't have it
 install.packages("devtools")
 
