@@ -1,4 +1,6 @@
-# SCassist: An AI-Powered Workflow Assistant for Single-Cell Analysis
+<img align="left" src="docs/scassist-logo.png"/>
+
+
 - Authors: Vijay Nagarajan PhD
 - Affiliation: Laboratory of Immunology, NEI/NIH
 - Contact: nagarajanv@nih.gov
