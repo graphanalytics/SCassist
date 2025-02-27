@@ -1,6 +1,5 @@
 <img align="left" src="docs/scassist-logo.png"/></img>
-    
-______
+&nbsp;
 
 * Authors: Vijay Nagarajan PhD
 * Affiliation: Laboratory of Immunology, NEI/NIH
