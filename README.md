@@ -1,10 +1,11 @@
 <img align="left" src="docs/scassist-logo.png"/>
 
-------------
+
+__________
 - Authors: Vijay Nagarajan PhD
 - Affiliation: Laboratory of Immunology, NEI/NIH
 - Contact: nagarajanv@nih.gov
-------------
+
 **SCassist** is an R package that utilizes a combination of statistical calculations and LLM-based insights to guide users through the complex process of single-cell RNA-seq data analysis. The package aims to provide recommendations, annotations, and interpretations, leading to efficient and insightful results.
 
 ### **Features:**
