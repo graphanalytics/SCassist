@@ -1,8 +1,22 @@
-# SCassist: An AI-Powered Workflow Assistant for Single-Cell Analysis
-- Authors: Vijay Nagarajan PhD
-- Affiliation: Laboratory of Immunology, NEI/NIH
-- Contact: nagarajanv@nih.gov
-------------
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7FRJHS3P46"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7FRJHS3P46');
+</script>
+
+<img align="left" src="docs/scassist-logo.png"/>
+&nbsp;
+
+----
+* Authors: Vijay Nagarajan PhD
+* Affiliation: Laboratory of Immunology, NEI/NIH
+* Contact: nagarajanv@nih.gov
+______
+
 **SCassist** is an R package that utilizes a combination of statistical calculations and LLM-based insights to guide users through the complex process of single-cell RNA-seq data analysis. The package aims to provide recommendations, annotations, and interpretations, leading to efficient and insightful results.
 
 ### **Features:**
