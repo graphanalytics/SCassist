@@ -8,7 +8,7 @@
   gtag('config', 'G-7FRJHS3P46');
 </script>
 
-<img align="left" src="scassist-logo.png"/>
+<img align="left" src="https://nih-nei.github.io/SCassist/scassist-logo.png"/>
 &nbsp;
 
 ----
